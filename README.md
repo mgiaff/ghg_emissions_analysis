@@ -23,7 +23,6 @@ import pandas as pd
 - `pandas.read_json()`
 - `pandas.read_html()`
 - `pandas.read_xml()`
-- `pandas.read_csv()`
 - `pandas.read_excel()`
 - `pandas.read_sql()`
 
@@ -32,7 +31,7 @@ Nel nostro caso utilizziamo il dataset [Greenhouse gas emissions by source secto
 
 ```python
 # Sorgente file: https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/ENV_AIR_GGE/?format=SDMX-CSV&compressed=false&i
-data = pd.read_csv('env_air_gge_linear.csv.gz') # Il file è compresso e salvato nella stessa cartella in cui è salvato questo notebook
+data = pd.read_csv('DATA/env_air_gge_linear.csv.gz')
 data.shape
 ```
 
@@ -511,7 +510,7 @@ Le codifiche sono disponibili in [un apposito repository](https://ec.europa.eu/e
 
 ```python
 # Sorgente file: https://ec.europa.eu/eurostat/estat-navtree-portlet-prod/BulkDownloadListing?sort=1&file=dic%2Fen%2Fgeo.dic
-with open('geo.dic', encoding='utf8') as f:
+with open('DATA/geo.dic', encoding='utf8') as f:
     line = f.readline()
 line
 ```
@@ -529,7 +528,7 @@ Le linee del file sono le coppie chiave-valore del dizionario, separate da un ca
 ```python
 from itertools import islice
 
-with open('geo.dic', encoding='utf8') as f:
+with open('DATA/geo.dic', encoding='utf8') as f:
     geo_dic = dict([line[:-1].split("\t") for line in f])
 ```
 
@@ -696,7 +695,7 @@ Ora possiamo fare lo stesso discorso per i codici delle altre colonne. Ecco quel
 
 ```python
 # Sorgente file: https://ec.europa.eu/eurostat/estat-navtree-portlet-prod/BulkDownloadListing?sort=1&file=dic%2Fen%2Fairpol.dic
-with open('airpol.dic', encoding='utf8') as f:
+with open('DATA/airpol.dic', encoding='utf8') as f:
     airpol_dic = dict([line[:-1].split("\t") for line in f])
 
 assert data.airpol.map(airpol_dic).notna().all()
@@ -788,7 +787,7 @@ Infine, lavoriamo sul dizionario dei settori di provenienza delle emissioni:
 
 ```python
 # Sorgente file: https://ec.europa.eu/eurostat/estat-navtree-portlet-prod/BulkDownloadListing?sort=1&file=dic%2Fen%2Fsrc_crf.dic
-with open('src_crf.dic', encoding='utf8') as f:
+with open('DATA/src_crf.dic', encoding='utf8') as f:
     src_crf_dic = dict([line[:-1].split("\t") for line in f])
 
 assert data.src_crf.map(src_crf_dic).notna().all()
