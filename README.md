@@ -1,5 +1,9 @@
 # Esempio analisi dati europei sulle emissioni dei gas serra con Python
-<span style="color:red">**Nota**: alcuni aggiustamenti sono stati inseriti dopo la registrazione del webinar, per facilitare ulteriormente la lettura e l'analisi. Il link alla registrazione del webinar è [questo](https://www.youtube.com/watch?v=a07jSho77bg).</span>
+**Nota**: alcuni aggiustamenti sono stati inseriti dopo la registrazione del webinar, per facilitare ulteriormente la lettura e l'analisi.
+    
+**Il link alla registrazione del webinar è [questo](https://www.youtube.com/watch?v=a07jSho77bg).**
+    
+**Invece [qui](https://mybinder.org/v2/gh/mgiaff/ghg_emissions_analysis/HEAD) si può lavorare online sul notebook, facendo i propri esperimenti.**
 
 
 ## Importazione di `pandas`
