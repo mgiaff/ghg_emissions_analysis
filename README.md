@@ -2282,7 +2282,7 @@ total_emissions.plot.line(y=['IT','FR','DE'])
 
 
     
-![png](Gas_serra_files/Gas_serra_70_1.png)
+![png](output_70_1.png)
     
 
 
@@ -2309,7 +2309,7 @@ corrected_emissions.plot.line(y=['IT','FR','DE'])
 
 
     
-![png](Gas_serra_files/Gas_serra_72_1.png)
+![png](output_72_1.png)
     
 
 
@@ -2340,7 +2340,7 @@ plt.ticklabel_format(style='plain')
 
 
     
-![png](Gas_serra_files/Gas_serra_74_0.png)
+![png](output_74_0.png)
     
 
 
@@ -2371,7 +2371,7 @@ ax.yaxis.set_major_formatter(mtick.PercentFormatter())
 
 
     
-![png](Gas_serra_files/Gas_serra_76_0.png)
+![png](output_76_0.png)
     
 
 
@@ -2400,7 +2400,7 @@ ax.yaxis.set_major_formatter(mtick.PercentFormatter())
 
 
     
-![png](Gas_serra_files/Gas_serra_78_0.png)
+![png](output_78_0.png)
     
 
 
@@ -2434,7 +2434,7 @@ binned_emissions_rate.plot.bar(
 
 
     
-![png](Gas_serra_files/Gas_serra_80_1.png)
+![png](output_80_1.png)
     
 
 
@@ -2811,7 +2811,7 @@ emissions_by_agents_IT.plot.pie(
 
 
     
-![png](Gas_serra_files/Gas_serra_84_1.png)
+![png](output_84_1.png)
     
 
 
@@ -2860,6 +2860,6 @@ emissions_by_agents_IT_mod.plot.pie(
 
 
     
-![png](Gas_serra_files/Gas_serra_90_1.png)
+![png](output_90_1.png)
     
 
