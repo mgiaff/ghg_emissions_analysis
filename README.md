@@ -2,6 +2,8 @@
 **Nota**: alcuni aggiustamenti sono stati inseriti dopo la registrazione del webinar, per facilitare ulteriormente la lettura e l'analisi.
     
 **Il link alla registrazione del webinar è [questo](https://www.youtube.com/watch?v=a07jSho77bg).**
+
+**[Qui](Slide webinar 25-10-2022.pdf) ci sono le slide.**
     
 **Invece [qui](https://mybinder.org/v2/gh/mgiaff/ghg_emissions_analysis/HEAD) si può lavorare online sul notebook, facendo i propri esperimenti.**
 
